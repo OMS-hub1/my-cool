@@ -1,0 +1,6 @@
+scene.setBackgroundColor(4)
+let cool_world_one = game.ask("player 1", "player 2")
+music.play(music.createSong(assets.song`cool world`), music.PlaybackMode.UntilDone)
+game.gameOver(controller.menu.isPressed())
+cool_world_one.fill(info.highScore())
+info.setLife("111".length)
